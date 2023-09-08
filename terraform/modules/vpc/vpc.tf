@@ -7,21 +7,21 @@ resource "aws_vpc" "vpc-test" {
 resource "aws_subnet" "public-subnet-01" {
   vpc_id     = module.vpc.vpc_id
   cidr_block = "10.82.0.128/28"
-  availability_zone = var.azs
+  availability_zone = "us-west-1a"
   map_customer_owned_ip_on_launch = true
 }
 
 resource "aws_subnet" "public-subnet-02" {
   vpc_id     = module.vpc.vpc_id
   cidr_block = "10.82.0.144/28"
-  availability_zone = var.azs
+  availability_zone = "us-west-1a"
   map_customer_owned_ip_on_launch = true
 }
 
 resource "aws_subnet" "public-subnet-03" {
   vpc_id     = module.vpc.vpc_id
   cidr_block = "10.82.0.160/28"
-  availability_zone = var.azs
+  availability_zone = "us-west-1a"
   map_customer_owned_ip_on_launch = true
 }
 

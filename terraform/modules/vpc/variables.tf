@@ -8,3 +8,7 @@ variable "cidr_vpc" {
   default     = "10.88.0.0/24"
 }
 
+variable "azs" {
+  type        = string
+  description = "To create subnets"
+}
