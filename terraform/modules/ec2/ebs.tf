@@ -1,5 +1,5 @@
 resource "aws_ebs_volume" "ebs" {
-  availability_zone = var.azs
+  availability_zone = "us-west-1a"
   size = 18
 }
 

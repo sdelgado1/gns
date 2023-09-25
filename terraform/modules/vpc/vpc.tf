@@ -1,7 +1,9 @@
 resource "aws_vpc" "vpc-test" {
-  name       = "gns-test-vpc"
   cidr_block = var.cidr_vpc
   vpc_id     = module.vpc.vpc_id
+  tags = {
+      Name   = "gns-test-vpc"
+  }
 }
 
 resource "aws_subnet" "public-subnet-01" {
